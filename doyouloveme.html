@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Do you love me?</title>
+</head>
+
+<body>
+    <h3><b>Do you love me??</b></h3>
+    <input type="button" value=" YES " onclick="yesClick()" style="position:absolute; left:285px; top:235px;">
+    <input type="button" id="btnNo" value="  NO  " onmouseover="noHover()" style="position:absolute; left:360px; top:235px;">
+    <script>
+        function yesClick() {
+            alert('<3');
+        }
+        function noHover() {
+            let w = window.innerWidth;
+            let h = window.innerHeight;
+            let rw=Math.floor(Math.random()*w)
+            let rh=Math.floor(Math.random()*h)
+            document.getElementById("btnNo").style.left = rw + "px";
+            document.getElementById("btnNo").style.height = rh + "px";
+
+
+        }
+    </script>
+</body>
+
+</html>
